@@ -4,7 +4,7 @@ import { cn } from "@/utils";
 import Link from "next/link";
 
 const buttonVariants = cva(
-  "rounded-md inline-flex items-center justify-center",
+  "rounded-md inline-flex items-center justify-center font-inter",
   {
     variants: {
       variant: {
@@ -14,7 +14,8 @@ const buttonVariants = cva(
       size: {
         xs: "",
         sm: "",
-        default: "px-2 py-2",
+        default: "px-2 py-1.5",
+        lg: 'px-3 py-2'
       },
     },
     defaultVariants: {

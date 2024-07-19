@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { DM_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/utils";
 
-const dmSans = DM_Sans({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+});
 
 export const metadata: Metadata = {
   title: "Saas Landing Page - Next.js + Tailwind CSS + TypeScript",
@@ -18,7 +26,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="antialiased">
-      <body className={cn("text-base min-h-screen", dmSans.className)}>
+      <body
+        className={cn(
+          "min-h-screen text-base",
+          inter.variable,
+          dmSans.variable,
+        )}
+      >
         {children}
       </body>
     </html>

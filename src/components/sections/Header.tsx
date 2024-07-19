@@ -22,7 +22,7 @@ const Header = () => {
           <LogoImage className="relative h-12 w-12" />
         </div>
         <div className="hidden items-center space-y-4 sm:flex">
-          <ul className="flex [&_a]:text-sm [&_a]:text-white items-center gap-4">
+          <ul className="flex [&_a]:text-sm [&_a]:text-white items-center gap-6">
             {NavLinks.map((link, index) => (
               <li key={index}>
                 <Link href={link.href}>{link.title}</Link>
