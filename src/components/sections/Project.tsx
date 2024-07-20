@@ -16,7 +16,7 @@ const Project = () => {
             your progress, motivate your efforts, and celebrate your successes,
             one task at a time.
           </Content>
-          <div className="relative w-[340px] h-[220px] md:w-[704px] md:h-[437px] lg:w-[1092px] lg:h-[704px]">
+          <div className="relative h-[220px] w-[340px] md:h-[437px] md:w-[704px] xl:h-[704px] xl:w-[1092px]">
             <Image
               src={AppNightImage}
               alt="App Night Image"

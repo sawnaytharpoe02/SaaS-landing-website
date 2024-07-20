@@ -18,9 +18,9 @@ const Socials = [
 
 const Footer = () => {
   return (
-    <div className="w-full bg-[#05020A] py-5 border-t border-white/10">
-      <Container className="flex items-center justify-between">
-        <p className="text-[#808080]">
+    <div className="w-full bg-[#05020A] py-10 sm:py-5 border-t border-white/10">
+      <Container className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-5 sm:gap-0">
+        <p className="text-[#808080] text-xs sm:text-sm">
           @ 2024 Your Company, Inc. All rights reserved
         </p>
         <div className="flex items-center space-x-4">
