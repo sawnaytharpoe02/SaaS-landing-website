@@ -36,9 +36,8 @@ const config: Config = {
         sans: ["var(--font-dm-sans)", "sans-serif"],
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-radial": "radial-gradient(closest-side,#000 67%,#9560EB)",
+        "gradient-radial-sm": "radial-gradient(closest-side,#000 87%,#9560EB)",
       },
       spacing: {
         "navigation-height": "var(--navigation-height)",
