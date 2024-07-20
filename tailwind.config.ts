@@ -25,7 +25,6 @@ const config: Config = {
       black: "#000",
       white: "#fff",
       "grey-22": "#222222",
-      "footer-text": "#808080",
       "light-grey": "#BBBBBB",
       "dark-grey": "#0D0D0D",
       grey: "#7A7A7A",

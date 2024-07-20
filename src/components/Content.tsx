@@ -6,7 +6,7 @@ interface ContentProps {
   className?: string;
 }
 const Content = ({ children, className }: ContentProps) => {
-  return <div className={cn("text-lg text-white", className)}>{children}</div>;
+  return <div className={cn("text-md sm:text-lg text-white font-light", className)}>{children}</div>;
 };
 
 export default Content;

@@ -2,6 +2,10 @@ import Banner from "@/components/Banner";
 import Hero from "@/components/sections/Hero";
 import Header from "@/components/sections/Header";
 import LogoTicker from "@/components/sections/LogoTicker";
+import Features from "@/components/sections/Features";
+import Project from "@/components/sections/Project";
+import FAQs from "@/components/sections/FAQs";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -10,6 +14,10 @@ export default function Home() {
       <Header />
       <Hero />
       <LogoTicker />
+      <Features />
+      <Project />
+      <FAQs />
+      <Footer />
     </main>
   );
 }
