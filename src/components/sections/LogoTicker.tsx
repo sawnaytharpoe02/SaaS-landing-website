@@ -11,24 +11,24 @@ import Image from "next/image";
 import Container from "@/components/Container";
 
 const ImageLists = [
-  { title: "Acme Logo", src: AcmeImage },
-  { title: "Quantum Logo", src: QuantumImage },
-  { title: "Echo Valley Logo", src: EchoImage },
-  { title: "Celstia Logo", src: CelstiaImage },
-  { title: "Pulse Logo", src: PulseImage },
-  { title: "Apex Logo", src: ApexImage },
+  { alt: "Acme Logo", src: AcmeImage },
+  { alt: "Quantum Logo", src: QuantumImage },
+  { alt: "Echo Valley Logo", src: EchoImage },
+  { alt: "Celstia Logo", src: CelstiaImage },
+  { alt: "Pulse Logo", src: PulseImage },
+  { alt: "Apex Logo", src: ApexImage },
 ];
 
 const LogoTicker = () => {
   return (
     <div className="bg-black pb-24 text-white">
       <Container className="flex flex-col items-center">
-        <p className="text-grey text-center">
+        <p className="text-center text-grey">
           Trusted by the world’s most innovative teams
         </p>
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-x-16 gap-y-4 overflow-hidden">
+        <div className="relative mt-12 flex items-center justify-center gap-x-16 gap-y-4 overflow-hidden before:absolute before:left-0 before:top-0 before:h-8 sm:before:w-12 before:bg-black/30 after:absolute before:blur-[4px] after:blur-[4px] after:right-0 after:top-0 after:h-8 before:w-8 after:w-8 sm:after:w-12 after:bg-black/30">
           {ImageLists.map((img) => (
-            <Image src={img.src} alt={img.title} className="h-[25px] sm:h-[28px] w-auto" />
+            <Image key={img.alt} src={img.src} alt={img.alt} className="h-8 w-auto" />
           ))}
         </div>
       </Container>

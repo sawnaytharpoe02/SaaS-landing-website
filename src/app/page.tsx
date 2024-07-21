@@ -5,6 +5,7 @@ import LogoTicker from "@/components/sections/LogoTicker";
 import Features from "@/components/sections/Features";
 import Project from "@/components/sections/Project";
 import FAQs from "@/components/sections/FAQs";
+import CTA from '@/components/sections/CTA'
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Features />
       <Project />
       <FAQs />
+      <CTA/>
       <Footer />
     </main>
   );

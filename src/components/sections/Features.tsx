@@ -39,7 +39,7 @@ const Features = () => {
           {FeaturesList.map((feature, index) => (
             <div
               key={index}
-              className="flex max-w-sm flex-col items-center justify-center gap-4 rounded-md border border-white/20 bg-dark-grey p-8 text-white"
+              className="flex max-w-sm flex-col items-center justify-center gap-4 rounded-lg border border-white/20 bg-dark-grey p-8 text-white"
             >
               <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-white">
                 <Leaf />
