@@ -3,6 +3,7 @@ import Container from "@/components/Container";
 import Title from "@/components/Title";
 import Content from "@/components/Content";
 import Leaf from "@/assets/icons/leaf.svg";
+import FeatureCard from "./FeatureCard";
 
 const FeaturesList = [
   {
@@ -24,7 +25,7 @@ const FeaturesList = [
 
 const Features = () => {
   return (
-    <div className="bg-black text-white py-12">
+    <div className="bg-black py-12 text-white">
       <Container>
         <div className="mx-auto flex max-w-xl flex-col items-center justify-center space-y-5 text-center">
           <Title>Everything you need</Title>
@@ -35,18 +36,13 @@ const Features = () => {
           </Content>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2 mt-12">
+        <div className="mt-12 flex flex-wrap justify-center gap-2">
           {FeaturesList.map((feature, index) => (
-            <div
+            <FeatureCard
               key={index}
-              className="cursor-pointer flex max-w-sm flex-col items-center justify-center gap-4 rounded-lg border border-white/20 bg-dark-grey p-8 text-white"
-            >
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-white">
-                <Leaf />
-              </div>
-              <h3 className="text-md font-bold">{feature.title}</h3>
-              <p className="text-center">{feature.description}</p>
-            </div>
+              title={feature.title}
+              description={feature.description}
+            />
           ))}
         </div>
       </Container>

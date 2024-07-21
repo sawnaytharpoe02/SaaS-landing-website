@@ -27,7 +27,7 @@ const LogoTicker = () => {
         <p className="text-center text-grey">
           Trusted by the world’s most innovative teams
         </p>
-        <div className="relative mt-12 flex overflow-hidden before:absolute before:left-0 before:z-10 before:h-8 before:w-8 before:bg-black/40 before:blur-[4px] before:content-[''] after:absolute after:right-0 after:h-8 after:w-8 after:bg-black/40 after:blur-[4px] after:content-[''] sm:before:w-12 sm:after:w-12">
+        <div className="max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-5xl relative mt-12 flex overflow-hidden before:absolute before:left-0 before:z-10 before:h-8 before:w-8 before:bg-black/40 before:blur-[4px] before:content-[''] after:absolute after:right-0 after:h-8 after:w-8 after:bg-black/40 after:blur-[4px] after:content-[''] sm:before:w-12 sm:after:w-12">
           <motion.div
             transition={{ duration: 10, ease: "linear", repeat: Infinity }}
             initial={{ translateX: "0" }}

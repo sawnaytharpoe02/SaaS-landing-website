@@ -33,7 +33,7 @@ const FAQs = () => {
       <Container>
         <Title>Frequently asked questions</Title>
 
-        <div className="mx-auto mt-12 flex max-w-3xl flex-col">
+        <div className="mx-auto mt-12 flex max-w-3xl flex-col gap-8">
           {FrequentlyAskedQuestions.map((faq) => (
             <Accordion
               question={faq.question}

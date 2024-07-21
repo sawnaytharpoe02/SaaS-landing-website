@@ -28,6 +28,7 @@ const config: Config = {
       "light-grey": "#BBBBBB",
       "dark-grey": "#0D0D0D",
       grey: "#7A7A7A",
+      violet: "#5D2CA8",
     },
     extend: {
       fontFamily: {

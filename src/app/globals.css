@@ -9,6 +9,10 @@
   --navigation-height: 80px;
 }
 
+html {
+  position: relative;
+}
+
 body {
   font-family: var(--font-dm-sans), sans-serif;
   /* Default global font */
