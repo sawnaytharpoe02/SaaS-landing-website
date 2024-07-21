@@ -9,6 +9,7 @@ import PulseImage from "@/assets/image/pulse.png";
 import ApexImage from "@/assets/image/apex.png";
 import Image from "next/image";
 import Container from "@/components/Container";
+import { motion } from "framer-motion";
 
 const ImageLists = [
   { alt: "Acme Logo", src: AcmeImage },
@@ -26,10 +27,31 @@ const LogoTicker = () => {
         <p className="text-center text-grey">
           Trusted by the world’s most innovative teams
         </p>
-        <div className="relative mt-12 flex items-center justify-center gap-x-16 gap-y-4 overflow-hidden before:absolute before:left-0 before:top-0 before:h-8 sm:before:w-12 before:bg-black/30 after:absolute before:blur-[4px] after:blur-[4px] after:right-0 after:top-0 after:h-8 before:w-8 after:w-8 sm:after:w-12 after:bg-black/30">
-          {ImageLists.map((img) => (
-            <Image key={img.alt} src={img.src} alt={img.alt} className="h-8 w-auto" />
-          ))}
+        <div className="relative mt-12 flex overflow-hidden before:absolute before:left-0 before:z-10 before:h-8 before:w-8 before:bg-black/40 before:blur-[4px] before:content-[''] after:absolute after:right-0 after:h-8 after:w-8 after:bg-black/40 after:blur-[4px] after:content-[''] sm:before:w-12 sm:after:w-12">
+          <motion.div
+            transition={{ duration: 10, ease: "linear", repeat: Infinity }}
+            initial={{ translateX: "0" }}
+            animate={{ translateX: "-50%" }}
+            className="flex flex-none items-center gap-16 pr-16"
+          >
+            {ImageLists.map((img) => (
+              <Image
+                key={img.alt}
+                src={img.src}
+                alt={img.alt}
+                className="h-8 w-auto flex-none"
+              />
+            ))}
+
+            {ImageLists.map((img) => (
+              <Image
+                key={img.alt}
+                src={img.src}
+                alt={img.alt}
+                className="h-8 w-auto flex-none"
+              />
+            ))}
+          </motion.div>
         </div>
       </Container>
     </div>

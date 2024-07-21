@@ -1,10 +1,12 @@
+"use client";
+
 import React from "react";
 import Button from "@/components/Button";
 import ChevronRight from "@/assets/icons/chevron_white.svg";
-import Container from "../Container";
 import Image from "next/image";
 import CursorImage from "@/assets/image/cursor.png";
 import MessageImage from "@/assets/image/message.png";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -16,21 +18,29 @@ const Hero = () => {
         </div>
       </Button>
       <div className="relative">
-        <Image
-          src={CursorImage}
-          alt=""
-          className="absolute hidden sm:-left-[150px] sm:top-[68px] sm:inline-block lg:-left-[142px] lg:top-[190px]"
-          width={200}
-          height={200}
-          sizes="min"
-        />
-        <Image
-          src={MessageImage}
-          alt=""
-          className="absolute hidden sm:-right-[166px] sm:top-[74px] sm:inline-block lg:-right-[164px] lg:top-[90px]"
-          width={200}
-          height={200}
-        />
+        <motion.div
+          drag
+          dragSnapToOrigin
+          className="absolute hidden cursor-grab sm:-left-[150px] sm:top-[68px] sm:inline-block lg:-left-[142px] lg:top-[190px]"
+        >
+          <Image
+            src={CursorImage}
+            alt="Cursor Icon"
+            className=""
+            width={200}
+            height={200}
+            draggable={false}
+          />
+        </motion.div>
+        <motion.div drag dragSnapToOrigin className="absolute hidden cursor-grab sm:-right-[166px] sm:top-[74px] sm:inline-block lg:-right-[164px] lg:top-[90px]">
+          <Image
+            src={MessageImage}
+            alt="Message Icon"
+            width={200}
+            height={200}
+            draggable={false}
+          />
+        </motion.div>
         <h1 className="text-xl leading-none tracking-tighter text-white sm:text-4xl md:text-5xl lg:text-12xl">
           One Task <br /> at a Time
         </h1>
@@ -42,7 +52,7 @@ const Hero = () => {
       <Button size="lg" className="relative z-10">
         Get for free
       </Button>
-      <div className="absolute top-[calc(100%-210px)] h-[375px] w-[909px] rounded-[100%] border border-[#B48CDE] sm:min-h-[1014px] sm:w-[1924px] bg-gradient-radial sm:bg-gradient-radial-sm lg:min-w-[2344px]" />
+      <div className="absolute top-[calc(100%-210px)] h-[375px] w-[909px] rounded-[100%] border border-[#B48CDE] bg-gradient-radial sm:min-h-[1014px] sm:w-[1924px] sm:bg-gradient-radial-sm lg:min-w-[2344px]" />
     </div>
   );
 };
