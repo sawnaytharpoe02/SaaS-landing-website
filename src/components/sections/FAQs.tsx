@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "@/components/Container";
 import Title from "@/components/Title";
-import PlusIcon from "@/assets/icons/plus.svg";
 import Accordion from "../Accordion";
 
 const FrequentlyAskedQuestions = [

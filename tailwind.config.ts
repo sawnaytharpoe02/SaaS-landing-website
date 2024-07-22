@@ -41,6 +41,8 @@ const config: Config = {
       },
       spacing: {
         "navigation-height": "var(--navigation-height)",
+        "banner-height": "var(--banner-height)",
+        "custom-height": "",
       },
     },
   },

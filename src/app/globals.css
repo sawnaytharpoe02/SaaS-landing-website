@@ -7,11 +7,9 @@
   --font-inter: 'Inter', sans-serif;
   --font-dm-sans: 'DM Sans', sans-serif;
   --navigation-height: 80px;
+  --banner-height: 50px;
 }
 
-html {
-  position: relative;
-}
 
 body {
   font-family: var(--font-dm-sans), sans-serif;

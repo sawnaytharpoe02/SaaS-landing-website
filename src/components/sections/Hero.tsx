@@ -32,7 +32,11 @@ const Hero = () => {
             draggable={false}
           />
         </motion.div>
-        <motion.div drag dragSnapToOrigin className="absolute hidden cursor-grab sm:-right-[166px] sm:top-[74px] sm:inline-block lg:-right-[164px] lg:top-[90px]">
+        <motion.div
+          drag
+          dragSnapToOrigin
+          className="absolute hidden cursor-grab sm:-right-[166px] sm:top-[74px] sm:inline-block lg:-right-[164px] lg:top-[90px]"
+        >
           <Image
             src={MessageImage}
             alt="Message Icon"
